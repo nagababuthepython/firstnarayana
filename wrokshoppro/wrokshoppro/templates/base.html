@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BASE FILE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<style>
+    body{
+        background-color: deepskyblue;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background-color:deeppink;
+    }
+    li{
+       float: left;
+
+    }
+
+    li a{
+        display:block ;
+        color: wheat;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+        font: bolder;
+    }
+       .active{
+           background-color: green;
+       }
+    li a:hover{
+        background-color: deepskyblue;
+        color: black;
+
+    }
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom:0 ;
+        width:100% ;
+        background-color:orangered;
+        color:yellow ;
+
+    }
+    #h11{
+        font-size: 50px;
+        text-shadow:3px 3px 3px greenyellow ;
+        margin-top: -10px;
+        color:red;
+
+    }
+    p{
+        color:deeppink;
+        font-family: "Comic Sans MS";
+    }
+
+
+</style>
+<body>
+<ul>
+    <li><a href="/home/" class="active">home</a></li>
+    <li><a href="/contact/">contact</a></li>
+    <li><a href="/courses/">courses</a></li>
+    <li><a href="/feedback/">feedback</a></li>
+    <li><a href="/ourteam/">ourteam</a></li>
+    <li><a href="/gallery/">gallery</a></li>
+</ul>
+<center>
+    <marquee <h1 id="h11">WELCOME TO DURGA SOFT</h1> </marquee></center>
+{% block content %}
+
+{% endblock %}
+
+
+
+
+<footer class="footer">
+    <center><h3>THANKU YOU ALL for Coperation</h3></center>
+</footer>
+
+</body>
+</html>
